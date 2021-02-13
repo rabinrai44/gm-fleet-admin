@@ -10,4 +10,5 @@ Using JavaScript and any library you see fit to develop a simple interface for t
 ## Credits: 
 
 [Flaticon](https://www.flaticon.com/)
+
 [Freeicons](https://freeicons.io/)
