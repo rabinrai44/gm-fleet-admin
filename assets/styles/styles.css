@@ -1,0 +1,136 @@
+/**
+* Styles goes here 
+* 
+*/
+
+/* ---------------------------------------------------
+    VARIABLES
+----------------------------------------------------- */
+:root {
+  --green: #13aa22;
+  --dark-green: #17491c;
+  --black: #444444;
+  --light: #e4e4e4;
+  --yellow: #fac917;
+  --red: #f05228;
+  --light-green: #e0f2e3;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+.bg-primary {
+  background-color: var(--dark-green) !important;
+}
+
+#sidebar {
+  box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.16);
+  z-index: 1000;
+}
+
+#sidebar .nav-item a {
+  color: var(--black);
+  font-weight: 700;
+}
+
+#sidebar .nav-item a:hover {
+  color: var(--green);
+}
+
+#sidebar .nav-item.active > a,
+a[area-expanded='true'] {
+  color: var(--dark-green);
+}
+
+a[data-toggle='collapse'] {
+  position: relative;
+}
+
+#sidebar .nav-item a .icon {
+  padding-right: 10px;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateX(-50%);
+}
+
+.sub-nav-item {
+  margin-bottom: 10px;
+}
+.sub-nav-item a.sub-nav-link {
+  font-size: 14px;
+  padding-left: 50px;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+#content {
+  background-image: url(./assets/images/map.png);
+  background-size: cover;
+  padding-left: 0;
+}
+
+#submenuContent {
+  width: 380px;
+  height: 100%;
+  background-color: white;
+  margin-left: -500px;
+  transition: all 0.4s ease-in;
+  /* display: none !important; */
+  box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  overflow-x: scroll;
+  z-index: 1;
+}
+
+.show {
+  margin-left: 0 !important;
+}
+
+#submenu-content-top {
+  width: 100%;
+}
+
+#submenu-content-top h4 {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.close-x {
+  cursor: pointer;
+}
+
+#submenu-content-top .filter {
+  height: 40px;
+}
+
+.vehicle-list .card {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.bg-light {
+  background-color: var(--light) !important;
+}
+
+.status-bar {
+  background-color: #f3f3f3;
+  height: 80px;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
